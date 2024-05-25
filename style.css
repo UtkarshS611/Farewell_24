@@ -261,7 +261,8 @@ main .icons img:nth-child(40){
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 8rem 4.5vw;
+    gap: 2rem;
+    padding: 7rem 4.5vw;
 }
 
 .container img{
@@ -333,7 +334,8 @@ section{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 4.79rem 4.5rem;
+    gap: 2rem;
+    padding: 3rem 4.5vw;
     margin-top: 5rem;
 }
 
@@ -418,7 +420,6 @@ section button{
 
 article{
     width: 43.77231rem;
-    /* height: 49.97281rem; */
     flex-shrink: 0;
     fill: rgba(255, 255, 255, 0.17);
     filter: drop-shadow(0px 4px 68.51px rgba(0, 0, 0, 0.25));
@@ -429,7 +430,8 @@ article{
     align-items: center;  
     border-radius: 2rem;
     box-shadow: 0.1px 0.1px 100px #20202065;
-    padding: 8.79rem 4.5rem;
+    gap: 2rem;
+    padding: 7rem 4.5vw;
     margin-top: 5rem;
 }
 
@@ -562,7 +564,6 @@ article button:hover{
         width: 90vw;
         margin-inline: auto;
         justify-content: center;
-        /* margin-top: 6rem; */
         padding: 5rem 2rem;
         gap: 2rem;
     }
@@ -577,7 +578,6 @@ article button:hover{
     }
 
     section{
-        /* min-height: 70vh; */
         width: 90vw;
         margin-inline: auto;
         margin-top: 10rem;
@@ -650,6 +650,9 @@ article button:hover{
 @media (max-width: 540px){
     .container button{
         width: 100%;
+    }
+    .container input{
+        padding: 1rem 2rem 1rem 1rem;
     }
 }
 
