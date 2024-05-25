@@ -582,8 +582,7 @@ article button:hover{
         min-height: 70vh;
         width: 90vw;
         margin-inline: auto;
-        margin-top: 10rem;
-        padding-block: clamp(1rem , 2rem , 3.5rem);
+        margin-top: 12rem;
         justify-content: center;
         gap: 1rem;
     }
