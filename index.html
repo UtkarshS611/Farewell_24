@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="shortcut icon" href="images/Group 90.svg" type="image/x-icon">
     <title>Farewell_24</title>
 </head>
@@ -129,6 +130,22 @@
             Confirm
         </button>
     </article>
+
+    <div id="message_result" class="toggle_class">
+        <aside>
+            <p>Congrats, Your guess is correct <span class="material-symbols-outlined">
+                check_circle
+            </span></p>
+            <button>Click me</button>
+        </aside>
+        <div id="fail">
+            <p>Unfortunately, Your guess is wrong<span class="material-symbols-outlined">
+                error
+            </span></p>
+            <button>Go back</button>
+        </div>
+    </div>
+    <div class="popup toggle_class"></div>
 
 
     <script src="index.js"></script>

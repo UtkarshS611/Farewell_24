@@ -19,6 +19,7 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
 
 
@@ -518,10 +519,6 @@ article button:hover{
     background-color: #202020;
 }
 
-.toggle_class{
-    display: none;
-}
-
 #forward{
     position: absolute;
     right: 1vw;
@@ -689,4 +686,115 @@ article button:hover{
 .rotate{
     rotate: 180deg;
     transition: all 0.5s ease-in-out;
+}
+
+
+aside{
+    width: 43.77231rem;
+    /* height: 10rem; */
+    fill: rgba(255, 255, 255, 0.17);
+    filter: drop-shadow(0px 4px 68.51px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(80px);   
+    border-radius: 2rem;
+    box-shadow: 0.1px 0.1px 100px #20202065;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    font-family: 'Roboto';
+    padding: 2rem 0rem;
+
+    >p{
+        font-size: 1.5rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+    }
+
+    .material-symbols-outlined{
+        color: green;
+        font-size: 3rem;
+    }
+
+    >button{
+        /* width: 30.3125rem; */
+        /* height: 4.5rem; */
+        padding: 0.5rem 2rem;
+        flex-shrink: 0;
+        border-radius: 0.62219rem;
+        background: #C00;
+        border: none;
+        color: #FFF;
+        font-family: 'Roboto';
+        font-size: 1.5rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+    >button:hover{
+        background-color: #202020;
+    }
+}
+
+.popup{
+    width: 80vw;
+    height: 70vh;
+    fill: rgba(255, 255, 255, 0.17);
+    filter: drop-shadow(0px 4px 68.51px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(80px);   
+    border-radius: 2rem;
+    box-shadow: 0.1px 0.1px 100px #20202065;
+    font-family: 'Roboto';
+    position: absolute;
+}
+
+#fail{
+    width: 43.77231rem;
+    fill: rgba(255, 255, 255, 0.17);
+    filter: drop-shadow(0px 4px 68.51px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(80px);   
+    border-radius: 2rem;
+    box-shadow: 0.1px 0.1px 100px #20202065;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    font-family: 'Roboto';
+    padding: 2.2rem 0rem;
+
+    >p{
+        font-size: 1.5rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+    }
+
+    .material-symbols-outlined{
+        color: red;
+        font-size: 3rem;
+    }
+
+    >button{
+        padding: 0.5rem 2rem;
+        flex-shrink: 0;
+        border-radius: 0.62219rem;
+        background: #C00;
+        border: none;
+        color: #FFF;
+        font-family: 'Roboto';
+        font-size: 1.5rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+    >button:hover{
+        background-color: #202020;
+    }
+}
+
+
+.toggle_class{
+    display: none;
 }

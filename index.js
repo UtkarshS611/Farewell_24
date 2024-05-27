@@ -12,6 +12,12 @@ const main = document.querySelector("main");
 const select = document.querySelector(".select_container");
 const icon = document.querySelector(".select_container i");
 const social_icons = document.querySelector(".icons");
+const aside = document.querySelector("aside");
+const aside_btn = document.querySelector("aside button");
+const popup = document.querySelector(".popup");
+const fail = document.querySelector("#fail");
+const result = document.querySelector("#message_result");
+const goback = document.querySelector("#message_result #fail button");
 
 select.addEventListener('click', abcd);
 
@@ -25,6 +31,9 @@ login_button.addEventListener('click' , function_one);
 section_button.addEventListener('click' , function_two);
 forward.addEventListener('click', function_three);
 backward.addEventListener('click', function_four);
+article_button.addEventListener('click', function_five);
+aside_btn.addEventListener('click', function_six);
+goback.addEventListener('click', function_seven);
 
 function function_zero(){
     main.classList.add("toggle_class");
@@ -63,4 +72,22 @@ function function_four(){
     article.classList.add("toggle_class");
     forward.classList.remove("toggle_class");
     backward.classList.add("toggle_class");
+}
+function function_five(){
+    aside.classList.remove("toggle_class");
+    fail.classList.remove("toggle_class");
+    article.classList.add('toggle_class');
+    ncslogo.classList.add("toggle_class");
+    backward.classList.add("toggle_class");
+    result.classList.remove("toggle_class");
+}
+function function_six(){
+    result.classList.add("toggle_class");
+    popup.classList.remove("toggle_class");
+}
+function function_seven(){
+    article.classList.remove("toggle_class");
+    ncslogo.classList.remove("toggle_class");
+    backward.classList.remove("toggle_class");
+    result.classList.add("toggle_class");
 }
