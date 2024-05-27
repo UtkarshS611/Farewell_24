@@ -9,6 +9,15 @@ const backward = document.querySelector("#backward");
 const ncslogo = document.querySelector(".logo");
 const main_btn = document.querySelector(".testimonials button");
 const main = document.querySelector("main");
+const select = document.querySelector(".select_container");
+const icon = document.querySelector(".select_container i");
+const social_icons = document.querySelector(".icons");
+
+select.addEventListener('click', abcd);
+
+function abcd(){
+    icon.classList.toggle("rotate");
+}
 
 
 main_btn.addEventListener('click', function_zero);
@@ -20,14 +29,17 @@ backward.addEventListener('click', function_four);
 function function_zero(){
     main.classList.add("toggle_class");
     login_container.classList.remove("toggle_class");
-    ncslogo.classList.remove("toggle_class")
+    ncslogo.classList.remove("toggle_class");
+    social_icons.classList.add("toggle_class");
 
 }
 function function_one(){
     login_container.classList.add("toggle_class");
     section.classList.remove("toggle_class");
     forward.classList.remove("toggle_class");
-    ncslogo.classList.add("logo_toggle");
+    forward.classList.add("toggle_right");
+    ncslogo.classList.add("toggle_left");
+    ncslogo.classList.add("logo-toggle");
     ncslogo.classList.remove("logo");
 }
 function function_two(){
@@ -35,6 +47,10 @@ function function_two(){
     article.classList.remove("toggle_class");
     backward.classList.remove("toggle_class");
     forward.classList.add("toggle_class");
+    ncslogo.classList.add("toggle_right");
+    ncslogo.classList.remove("toggle_left");
+    ncslogo.classList.add("logo_toggle");
+
 }
 function function_three(){
     section.classList.add("toggle_class");
