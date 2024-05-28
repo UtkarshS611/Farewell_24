@@ -19,6 +19,8 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
+    /* overflow-x: hidden; */
+    /* overflow-y: scroll; */
     overflow: hidden;
 }
 
@@ -48,16 +50,22 @@ main .testimonials span:nth-child(2){
     gap: 1rem;
 }
 
-main .testimonials button{
+main .testimonials a{
     border-radius: 15px;
     border: none;
     height: 4.3125rem;
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
     text-decoration: none;
     text-transform: capitalize;
+    box-shadow: 6px 8px 0px #00000092;
+    transition: all 0.3s ease-in-out;
+}
+
+main .testimonials a:hover{
+    box-shadow: none;
+    scale: 1.05;
 }
 .icons img{
     position: absolute;
@@ -301,9 +309,9 @@ main .testimonials button{
     opacity: 0.76;
 }
 
-.container button{
+.container a{
     width: 27.5rem;
-    height: 4.3125rem;
+    height: 4rem;
     border-radius: 0.6875rem;
     background: #C00;   
     border: none;
@@ -316,6 +324,8 @@ main .testimonials button{
     line-height: normal;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    text-decoration: none;
+    align-content: center;
 }
 
 .container button:hover{
@@ -396,7 +406,8 @@ section textarea::placeholder{
     outline: none;
 }
 
-section button{
+section a{
+    text-decoration: none;
     width: 30.3125rem;
     height: 4.5rem;
     flex-shrink: 0;
@@ -408,7 +419,6 @@ section button{
     align-items: center;
     gap: 1rem;
     color: #FFF;
-    text-align: center;
     font-family: Roboto;
     font-size: 1.5rem;
     font-style: normal;
@@ -533,10 +543,12 @@ article button:hover{
     border-radius: 100vw;
     border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#backward{
+#backwards{
     position: absolute;
-    left: 1vw;
     width: 6.8125rem;
     height: 6.8125rem;
     flex-shrink: 0;
@@ -548,6 +560,9 @@ article button:hover{
     border-radius: 100vw;
     border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media(max-width:768px){
@@ -567,6 +582,9 @@ article button:hover{
     .container input{
         width: 100%;
     }
+    .container a{
+        width: 100%;
+    }
 
     section{
         width: 90vw;
@@ -583,7 +601,7 @@ article button:hover{
     section .pfp img{
         height: 90%;
     }
-    section textarea , section button {
+    section textarea , section a {
         width: 100%;
     }
 
@@ -637,10 +655,18 @@ article button:hover{
     #forward{
         width: 4.5rem;
         height: 4.5rem;
+        top: 1rem;
+        right: 1rem;
     }
     #backward{
         top: 1rem;
-        left: 1rem;
+        left: 10rem;
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    #backwards{
+        top: 1rem;
+        right: 1rem;
         width: 4.5rem;
         height: 4.5rem;
     }
@@ -702,6 +728,13 @@ article button:hover{
             font-size: 20px;
         }
     }
+    section .pfp{
+        height: 7rem;
+        width: 7rem;
+    }
+    section .pfp img{
+        height: 90%;
+    }
 }
 
 @media(min-width:1000px){   
@@ -724,6 +757,9 @@ article button:hover{
         position: absolute;
         left: 1rem;
         top: 1rem;
+    }
+    #backwards{
+        left: 1vw;
     }
 }
 
@@ -819,12 +855,13 @@ aside{
         font-size: 3rem;
     }
 
-    >button{
+    >a{
         padding: 0.5rem 2rem;
         flex-shrink: 0;
         border-radius: 0.62219rem;
         background: #C00;
         border: none;
+        text-decoration: none;
         color: #FFF;
         font-family: 'Roboto';
         font-size: 1.5rem;
@@ -832,7 +869,7 @@ aside{
         cursor: pointer;
         transition: all 0.2s ease-in-out;
     }
-    >button:hover{
+    >a:hover{
         background-color: #202020;
     }
 }
